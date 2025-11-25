@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm & Stopwatch App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+<div class="app-title">⏱️ Alarm & Stopwatch</div>
+
+<div class="container">
+
+    <!-- STOPWATCH -->
+    <div class="card">
+        <h2>Stopwatch</h2>
+        <div id="stopwatch" class="timer-display">00:00:00</div>
+        <div class="btn-row">
+            <button class="btn start" onclick="startStopwatch()">Start</button>
+            <button class="btn pause" onclick="pauseStopwatch()">Pause</button>
+            <button class="btn reset" onclick="resetStopwatch()">Reset</button>
+        </div>
+    </div>
+
+    <!-- ALARM -->
+    <div class="card">
+        <h2>Alarm Clock</h2>
+        <input type="time" id="alarmTime" class="time-input">
+        <div class="btn-row">
+            <button class="btn set" onclick="setAlarm()">Set Alarm</button>
+            <button class="btn clear" onclick="clearAlarm()">Clear</button>
+        </div>
+        <button id="stopAlarmBtn" class="btn stop" style="display:none;" onclick="stopAlarm()">
+    Stop Alarm
+</button>
+
+    </div>
+
+</div>
+
+<audio id="alarmSound" src="assets/alarm.mp3" preload="auto"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
