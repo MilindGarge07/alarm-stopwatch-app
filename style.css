@@ -1,0 +1,111 @@
+/* FONT */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;500;600&display=swap");
+
+/* BACKGROUND */
+body {
+  margin: 0;
+  padding: 30px;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  color: #fff;
+  text-align: center;
+}
+
+/* TITLE */
+.app-title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* LAYOUT */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* CARD */
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 25px;
+  width: 320px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* TIMER DISPLAY */
+.timer-display {
+  font-size: 48px;
+  font-family: "Orbitron", sans-serif;
+  margin: 20px 0;
+  color: #00eaff;
+  text-shadow: 0 0 10px #00eaff88;
+}
+
+/* TIME INPUT */
+.time-input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  background: #ffffff22;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* BUTTON ROW */
+.btn-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* BUTTONS */
+.btn {
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+  min-width: 90px;
+}
+
+/* BUTTON THEMES */
+.start {
+  background: #28c76f;
+}
+.pause {
+  background: #ff9f43;
+}
+.reset {
+  background: #ea5455;
+}
+.set {
+  background: #00cfe8;
+}
+.clear {
+  background: #7367f0;
+}
+
+.btn:hover {
+  transform: scale(1.07);
+  opacity: 0.9;
+}
+
+.stop {
+  background: #ff4d4d;
+}
